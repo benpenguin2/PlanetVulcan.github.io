@@ -13,11 +13,15 @@ Planet Vulcan Robotics is a rookie team comprised of Staples High School student
 ###Jonathan Alter
 Jonathan Alter is a captain and founding member of Planet Vulcan Robotics Team 9928.  He will be a Junior at Staples High School for the upcoming 2015-2016 school year. Although it is his first year in robotics, Jonathan is an aspiring student in the STEM approach. Having taken Physics over the Summer of 2015, Jonathan greatly looks forward to starting AP Physics with Calculus in the coming school year. Additionally, as an avid member of the Authentic Science Research program, Jonathan won awards at both SCISEF, a local science competition for Southern Connecticut, and Norwalk Community College. He looks forward to continuing his work in computer science and data cryptography this coming year, while also becoming a founding member of Staples High School's first Astronomy Club. Jonathan is also a tennis enthusiast and an avid violinist in the Symphonic Orchestra.
 
-###Simon Berger - TODO
+###Gavin Berger
+Gavin Berger is a founding member of team 9928. He is a junior at Staples High School and this is his first year doing a USFirst program. He is the filmmaker, photographer and social media consultant for the team. 
+
+Outside of robotics, Gavin is involved in many activities. He is a part of the Staples Players Theater Program, both on stage as an actor and off stage in technical aspects of the program. He is also an avid filmmaker who has created many short films, as well as done freelance videography, and filmed dozens of plays, and done wedding videos. He is the president of the Filmmaking Club at Staples High School. As well as filmmaking, he is the vice president of the Stand Up To Cancer Club at Staples High Schools, and have been an avid part in organizing charity events and bake sales.
+
+###Simon Berger
 Simon Berger is a captain and founding member of team 9928. He is a junior at Staples High School and this is his first year doing a USFirst program. He has been programming since sixth grade. He is a sysadmin, website developer, and one of the programmers for the team.
 
-###Gavin Berger - TODO
-Gavin Berger is a captain and founding member of team 9928. He is a junior at Staples High School and this is his first year doing a USFirst program. He is the filmmaker, video editor, photographer and social media consultant for the team. 
+Simon does other things outside of robotics. He is a member of the Stand Up to Cancer Club and the Filmmaking Club at Staples High School. He enjoys programming in his free time. He looks forward to AP Calculus BC and AP Statistics BC this upcoming year.
 
 ###Zach Kornbluth - TODO
 
@@ -30,10 +34,12 @@ In addition to robotics, Ben plays the clarinet in the band, is a member of the 
 ###Audrey Seo
 Audrey Seo is a member of team 9928. Although she is a senior at Staples High School, this is her first year in a USFirst program. However, her enthusiasm for creating and problem-solving has been life-long. From legos and DIY-projects to programming and visual arts, she loves exploring the range of possibilities creativity opens.
 
-In addition, she is a black belt in Tae Kwon Do, flutist, pianist, oil painter, reader, autodidact, and illustrator. She’s taken classes at Staples in computer programming, in the process learning both the Ruby and Processing languages, and looks forward to learning Python and CSS, as well as other languages; however, she also avidly participates in Staples High School’s art programs. She is a beginner speedcuber, as well as a the president of three clubs:  Staples Nerdfighters, Staples Literary Society, and the Asian Culture Club.
+In addition, she is a black belt in Tae Kwon Do, flutist, pianist, oil painter, reader, autodidact, and illustrator. She’s taken classes at Staples in computer programming, in the process learning both the Ruby and Processing languages, and looks forward to learning Python and CSS, as well as other languages; however, she also avidly participates in Staples High School’s art programs. She is a beginner speedcuber, as well as a the president of three clubs: Staples Nerdfighters, Staples Literary Society, and the Asian Culture Club.
 
-###Claire Seo - TODO
-Claire Seo is a member of team 9928. 
+###Claire Seo
+Claire Seo is a junior at Staples High School and this is her first year on a robotics team. She’s excited to be working with Team 9928 this year with outreach and promotion for the team.
+
+In addition to robotics, Claire enjoys playing violin, singing, and mixing covers. She has studied violin for nine years, and for the past two years, she has been under the tutelage of Wendy Sharp. In addition, she is a first violin in the Norwalk Youth Symphony’s Principal orchestra as well as the Symphonic orchestra and chamber orchestra at Staples High School. She has been singing and self-teaching herself mixing for about a year, and is excited to learn animation.
 
 
 ##Mentors
