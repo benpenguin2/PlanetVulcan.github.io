@@ -10,4 +10,4 @@ facebook_username: PlanetVulcanRobotics
 
 # Build settings
 markdown: kramdown
-exclude: [README.md, Gemfile, Gemfile.lock, CNAME, design.txt]
+exclude: [Gemfile, Gemfile.lock, Rakefile, design.txt]

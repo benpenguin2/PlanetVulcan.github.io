@@ -1,0 +1,25 @@
+$stdout.sync = true
+GH_PAGES_DIR = "compiled_site"
+
+
+def run(command)
+  IO.popen(command) do |io|
+    while (line = io.gets) do
+      puts line
+    end
+  end
+end
+
+desc "Build Jekyll site and copy files"
+task :build do
+	run 'jekyll build'
+	
+	puts "Removing previous compiled pages."
+  system "rm -r ../#{GH_PAGES_DIR}/*" unless Dir['../#{GH_PAGES_DIR}/*'].empty?
+	
+	puts "Copying new compiled pages."
+  system "cp -r _site/* ../#{GH_PAGES_DIR}/"
+	
+	puts "Creating .nojekyll file."
+	system "touch ../#{GH_PAGES_DIR}/.nojekyll"
+end
