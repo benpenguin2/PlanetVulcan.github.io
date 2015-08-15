@@ -11,3 +11,5 @@ facebook_username: PlanetVulcanRobotics
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, Rakefile, design.txt]
+source: .
+destination: ../compiled_site
