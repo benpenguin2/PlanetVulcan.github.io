@@ -22,4 +22,7 @@ task :build do
 	
 	puts "Creating .nojekyll file."
 	system "touch ../#{GH_PAGES_DIR}/.nojekyll"
+	
+	puts "Copying CNAME file"
+	system "cp ../CNAME ../#{GH_PAGES_DIR}"
 end
