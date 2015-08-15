@@ -14,7 +14,11 @@ end
 desc "Build Jekyll site and copy files"
 task :build do
   puts "Removing previous compiled pages."
-  FileUtils.rm_r GH_PAGES_DIR
+  begin
+    FileUtils.rm_r GH_PAGES_DIR
+  rescue Errno::ENOENT
+    puts "Already removed"
+  end
   
 	Dir.chdir 'jekyll_site'
 	run 'jekyll build'
