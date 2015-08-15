@@ -30,3 +30,14 @@ task :build do
 	puts "Copying CNAME file"
 	FileUtils.cp 'CNAME', GH_PAGES_DIR
 end
+
+desc "Push compiled_site subtree to master"
+task :push do
+  run "git subtree push --prefix compiled_site/ origin master"
+end
+
+desc "Force push compiled_site subtree to master"
+task :forcepush do
+  command = "git push origin `git subtree split --prefix compiled_site/ master`:master --force"
+  run "bash -c '#{command}'" 
+end
