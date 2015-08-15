@@ -11,13 +11,13 @@ def run(command)
   end
 end
 
-desc "Build Jekyll site and copy files"
+desc "Build Jekyll site and copy files."
 task :build do
   puts "Removing previous compiled pages."
   begin
     FileUtils.rm_r GH_PAGES_DIR
   rescue Errno::ENOENT
-    puts "Already removed"
+    puts "Already removed."
   end
   
 	Dir.chdir 'jekyll_site'
@@ -27,19 +27,21 @@ task :build do
 	puts "Creating .nojekyll file."
 	FileUtils.touch "#{GH_PAGES_DIR}/.nojekyll"
 	
-	puts "Copying CNAME file"
+	puts "Copying CNAME file."
 	FileUtils.cp 'CNAME', GH_PAGES_DIR
 	
-	puts "Copying .gitignore file"
+	puts "Copying .gitignore file."
 	FileUtils.cp '.gitignore', GH_PAGES_DIR
+	
+	puts "Copying .gitattributes file."
 end
 
-desc "Push compiled_site subtree to master"
+desc "Push compiled_site subtree to master."
 task :push do
   run "git subtree push --prefix compiled_site/ origin master"
 end
 
-desc "Force push compiled_site subtree to master"
+desc "Force push compiled_site subtree to master."
 task :forcepush do
   command = "git push origin `git subtree split --prefix compiled_site/ master`:master --force"
   run "bash -c '#{command}'" 
