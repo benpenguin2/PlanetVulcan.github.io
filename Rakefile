@@ -1,3 +1,4 @@
+require 'fileutils'
 $stdout.sync = true
 GH_PAGES_DIR = "compiled_site"
 
@@ -12,17 +13,16 @@ end
 
 desc "Build Jekyll site and copy files"
 task :build do
+  puts "Removing previous compiled pages."
+  FileUtils.rm_r GH_PAGES_DIR
+  
+	Dir.chdir 'jekyll_site'
 	run 'jekyll build'
-	
-	#puts "Removing previous compiled pages."
-  #system "rm -r ../#{GH_PAGES_DIR}/*" unless Dir['../#{GH_PAGES_DIR}/*'].empty?
-	#
-	#puts "Copying new compiled pages."
-  #system "cp -r _site/* ../#{GH_PAGES_DIR}/"
-	
+	Dir.chdir '..'
+  
 	puts "Creating .nojekyll file."
-	system "touch ../#{GH_PAGES_DIR}/.nojekyll"
+	FileUtils.touch "#{GH_PAGES_DIR}/.nojekyll"
 	
 	puts "Copying CNAME file"
-	system "cp ../CNAME ../#{GH_PAGES_DIR}"
+	FileUtils.cp 'CNAME', GH_PAGES_DIR
 end
