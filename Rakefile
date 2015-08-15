@@ -29,6 +29,9 @@ task :build do
 	
 	puts "Copying CNAME file"
 	FileUtils.cp 'CNAME', GH_PAGES_DIR
+	
+	puts "Copying .gitignore file"
+	FileUtils.cp '.gitignore', GH_PAGES_DIR
 end
 
 desc "Push compiled_site subtree to master"
