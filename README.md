@@ -1,2 +1,0 @@
-# PlanetVulcan.github.io
-Website
