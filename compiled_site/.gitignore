@@ -1,3 +1,4 @@
 jekyll_site/_site
 jekyll_site/.sass-cache
 Gemfile.lock
+compiled_site
