@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FIRST
-permalink: /about/first/
+permalink: /first/
 ---
 
 #What is FIRST?
