@@ -13,6 +13,6 @@ gofundme_username: PlanetVulcanRobot
 
 # Build settings
 markdown: kramdown
-exclude: [Gemfile, Gemfile.lock, Rakefile, design.txt]
+exclude: [Gemfile, Gemfile.lock, Rakefile, design.txt, bower.json]
 source: .
 destination: ../compiled_site

@@ -1,0 +1,22 @@
+{
+  "name": "PlanetVulcan.github.io",
+  "version": "0.1.1",
+  "homepage": "http://www.planetvulcanrobotics.com",
+  "authors": [
+    "Simon Berger <simon@planetvulcanrobotics.com>"
+  ],
+  "description": "Site for Planet Vulcan",
+  "license": "All Rights Reserved",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "lightbox2": "~2.8.1",
+    "requirejs": "~2.1.20"
+  }
+}
