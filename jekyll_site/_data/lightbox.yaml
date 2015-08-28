@@ -1,1 +1,7 @@
-- id: 
+- id: Test Image 1
+  description: Enter Description Here
+  imagefolder: /img/lightbox/test
+  images:
+  - name: image-1.jpg
+    thumb: thumb-1.jpg
+    text: Test image 1
