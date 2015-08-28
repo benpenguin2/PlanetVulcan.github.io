@@ -32,8 +32,14 @@ task :build do
 	
 	puts "Copying .gitignore file."
 	FileUtils.cp '.gitignore', GH_PAGES_DIR
-	
-	puts "Copying .gitattributes file."
+end
+
+desc "Serve Jekyll site for testing"
+task :serve do
+  puts "Serving."
+	Dir.chdir 'jekyll_site'
+	run 'jekyll serve'
+	Dir.chdir '..'
 end
 
 desc "Push compiled_site subtree to master."
