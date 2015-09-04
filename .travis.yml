@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+  - 2.1.6
+
+before_install:
+  - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
+  
+script:
+  - bundle exec rake build
+
+after_success:
+  - eval "$(ssh-agent -s)" #start the ssh agent
+  - chmod 600 .travis/deploy_key.pem # this key should have push access
+  - ssh-add .travis/deploy_key.pem
+  - git remote add origin git@github.com:PlanetVulcan/PlanetVulcan.github.io.git
+  - "git commit -m \"Travis Build: $TRAVIS_COMMIT_MSG\""
+  - git config user.name "Travis CI - Planet Vulcan Robotics"
+  - git config user.email "info@planetvulcanrobotics.com"
+  - git subtree push --prefix compiled_site/ origin master

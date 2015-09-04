@@ -1,4 +1,5 @@
 require 'fileutils'
+#require 'git'
 $stdout.sync = true
 GH_PAGES_DIR = "compiled_site"
 
@@ -45,6 +46,7 @@ end
 desc "Push compiled_site subtree to master."
 task :push do
   run "git subtree push --prefix compiled_site/ origin master"
+  #g = Git.open(working_dir, :log => Logger.new(STDOUT))
 end
 
 desc "Force push compiled_site subtree to master."
