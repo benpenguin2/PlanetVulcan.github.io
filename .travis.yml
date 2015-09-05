@@ -8,6 +8,7 @@ before_install:
 script:
 - bundle exec rake build
 after_success:
+- ls
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/travis_rsa
 - ssh-add .travis/travis_rsa
