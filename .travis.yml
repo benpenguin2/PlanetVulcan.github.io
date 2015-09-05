@@ -11,7 +11,9 @@ before_install:
 - git reset --hard "$TRAVIS_COMMIT_SHA1"
 script:
 - bundle exec rake build
+- ls
 after_success:
+- ls
 - git status
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/travis_rsa
