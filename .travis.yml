@@ -11,7 +11,7 @@ before_install:
 script:
 - bundle exec rake build
 after_success:
-- ls
+- git status
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/travis_rsa
 - ssh-add .travis/travis_rsa
@@ -20,5 +20,5 @@ after_success:
 - git config user.email "info@planetvulcanrobotics.com"
 - git add --all
 - "bash -c \"git commit -m 'Travis Build: $TRAVIS_COMMIT_MSG'\""
-- git push deploy master
+- git push deploy source
 - git subtree push --prefix compiled_site/ deploy master
