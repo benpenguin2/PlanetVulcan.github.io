@@ -11,9 +11,9 @@ after_success:
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/travis_rsa
 - ssh-add .travis/travis_rsa
-- git remote add origin git@github.com:PlanetVulcan/PlanetVulcan.github.io.git
+- git remote add deploy git@github.com:PlanetVulcan/PlanetVulcan.github.io.git
 - git config user.name "Travis CI - Planet Vulcan Robotics"
 - git config user.email "info@planetvulcanrobotics.com"
-- bash -c 'git commit -m "Travis Build: $TRAVIS_COMMIT_MSG"'
-- git push origin master
-- git subtree push --prefix compiled_site/ origin master
+- "bash -c \"git commit -m 'Travis Build: $TRAVIS_COMMIT_MSG'\""
+- git push deploy master
+- git subtree push --prefix compiled_site/ deploy master
