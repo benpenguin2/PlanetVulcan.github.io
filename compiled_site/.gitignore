@@ -1,2 +1,5 @@
 jekyll_site/.sass-cache
 Gemfile.lock
+.bundle/
+.travis/travis_rsa
+vendor/
