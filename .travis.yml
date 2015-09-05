@@ -7,6 +7,7 @@ before_install:
   -in .travis/travis_rsa.enc -out .travis/travis_rsa -d
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
 - export TRAVIS_COMMIT_SHA1="$(git log --pretty=format:'%h' -n 1)"
+- git checkout source
 - git reset --hard "$TRAVIS_COMMIT_SHA1"
 script:
 - bundle exec rake build
