@@ -15,4 +15,5 @@ after_success:
 - git config user.name "Travis CI - Planet Vulcan Robotics"
 - git config user.email "info@planetvulcanrobotics.com"
 - bash -c 'git commit -m "Travis Build: $TRAVIS_COMMIT_MSG"'
+- git push origin master
 - git subtree push --prefix compiled_site/ origin master
