@@ -3,7 +3,7 @@ rvm:
 - ruby-2.1.7
 before_install:
 - openssl aes-256-cbc -K $encrypted_23e7d50fa7c4_key -iv $encrypted_23e7d50fa7c4_iv
-  -in .travis/travis_rsa.enc -out .travis/travis_rsa -d
+  -out .travis/travis_rsa.enc -in .travis/travis_rsa -d
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
 script:
 - bundle exec rake build
