@@ -7,4 +7,3 @@ permalink: /sponsors/
 TODO: ADD SPONSORS
 
 * Patio.com
-* Sweetfrog
