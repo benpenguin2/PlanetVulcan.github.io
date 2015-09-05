@@ -29,14 +29,14 @@ Simon Berger is a founding member of team 9928. He is a junior at Staples High S
 
 Simon does other things outside of robotics. He is a member of the Stand Up to Cancer Club and the Filmmaking Club at Staples High School. He enjoys programming in his free time. He looks forward to AP Calculus BC and AP Statistics BC this upcoming year.
 
-###Zach Kornbluth - The Mom of the Team
+###Zach Kornbluth
 ![Zach Kornbluth]({{ "/img/profile/Kornbluth-Zach.jpg" }}){: .pic-profile }
 
 Zach Kornbluth is a founding member of team 9928. He is a junior at Staples High School and this is his second year involved with a USFirst program. He is one of the programmers on the team, and also works on the Engineering Notebook. He has taken two programming courses at Staples and five college courses through Coursera.org from Rice, Michigan, and Stanford Universities.
 
 In addition to robotics, Zach plays the piano, plays for the Junior Varsity tennis team at Staples and is a member of the Staples Investment Club. He will be taking AP Multivariable Calculus AB, AP Statistics, and AP Economics this upcoming school year.
 
-###Ben Rosoff - The Dad of the Team
+###Ben Rosoff
 ![Ben Rosoff]({{ "/img/profile/Rosoff-Ben.jpg" }}){: .pic-profile }
 
 Ben Rosoff is a founding member of team 9928. He is a junior at Staples High School. This is his third year in robotics. Ben has always been interested in building since he was a little kid playing with Legos. 
