@@ -58,7 +58,7 @@ task :travis_git_commit do
   
   # Git Push
   a = Array.new
-  a.push "git push deploy source"
+  #a.push "git push deploy source"
   a.push "git subtree push --prefix compiled_site/ deploy master"
   
   run2 a
