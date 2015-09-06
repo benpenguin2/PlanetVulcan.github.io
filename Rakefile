@@ -27,7 +27,6 @@ end
 desc "Travis Key"
 task :travis_key do
   run 'openssl aes-256-cbc -K $encrypted_23e7d50fa7c4_key -iv $encrypted_23e7d50fa7c4_iv -in .travis/travis_rsa.enc -out .travis/travis_rsa -d'
-  run 'eval "$(ssh-agent -s)"'
   run 'chmod 600 .travis/travis_rsa'
   run 'ssh-add .travis/travis_rsa'
   run 'git remote add deploy git@github.com:PlanetVulcan/PlanetVulcan.github.io.git'

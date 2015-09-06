@@ -3,6 +3,7 @@ rvm:
 - ruby-2.1.7
 cache: bundler
 before_script:
+- eval "$(ssh-agent -s)"
 - bundle exec rake travis_key
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
 - export TRAVIS_COMMIT_SHA1="$(git log --pretty=format:'%h' -n 1)"
