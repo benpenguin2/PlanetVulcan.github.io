@@ -23,6 +23,7 @@ def run2(commands)
   end
 end
 
+desc "Travis Key"
 task :tavis_key do
   run 'openssl aes-256-cbc -K $encrypted_23e7d50fa7c4_key -iv $encrypted_23e7d50fa7c4_iv -in .travis/travis_rsa.enc -out .travis/travis_rsa -d'
   run 'eval "$(ssh-agent -s)"'
@@ -32,6 +33,7 @@ task :tavis_key do
   
 end
 
+desc "Travis Git Env"
 task :travis_git_env do
   a = Array.new
   
@@ -48,6 +50,7 @@ task :travis_git_env do
   run2 a
 end
 
+desc "Travis Git Commit"
 task :travis_git_commit do
   a = Array.new
   
