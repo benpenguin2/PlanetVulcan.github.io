@@ -59,8 +59,8 @@ task :travis_git_commit do
   # Git Push
   #a.push "git push deploy source"
   #a.push "git subtree push --prefix compiled_site/ deploy master"
-  command = "git push deploy `git subtree split --prefix compiled_site/ master`:master --force"
-  run "bash -c '#{command}'" 
+  a = ["git push deploy `git subtree split --prefix compiled_site/ master`:master --force", "git subtree push --prefix compiled_site/ deploy master"]
+  run2 a
 end
 
 desc "Build Jekyll site and copy files."
