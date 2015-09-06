@@ -4,6 +4,6 @@ title: Sponsors
 permalink: /sponsors/
 ---
 
-TODO: ADD SPONSORS
+TODO: ADD MORE SPONSORS
 
 * Patio.com
