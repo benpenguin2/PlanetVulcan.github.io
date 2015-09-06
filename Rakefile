@@ -12,6 +12,54 @@ def run(command)
   end
 end
 
+def run2(commands)
+  commands.each do |c|
+    puts "$ #{c}"
+    IO.popen('/bin/sh', '-c', c) do |io|
+      while (line = io.gets) do
+        puts line
+      end
+    end
+  end
+end
+
+task :tavis_key do
+  run 'openssl aes-256-cbc -K $encrypted_23e7d50fa7c4_key -iv $encrypted_23e7d50fa7c4_iv -in .travis/travis_rsa.enc -out .travis/travis_rsa -d'
+  run 'eval "$(ssh-agent -s)"'
+  run 'chmod 600 .travis/travis_rsa'
+  run 'ssh-add .travis/travis_rsa'
+  run 'git remote add deploy git@github.com:PlanetVulcan/PlanetVulcan.github.io.git'
+  
+end
+
+task :travis_git_env do
+  a = Array.new
+  
+  #a.push 'export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"'
+  #a.push 'export TRAVIS_COMMIT_SHA1="$(git log --pretty=format:\'%h\' -n 1)"'
+  
+  # Fix Branch Head
+  a.push 'git checkout source'
+  a.push "git reset --hard '#{ENV["TRAVIS_COMMIT_SHA1"]}'"
+  # Git Names
+  a.push 'git config user.name "Travis CI - Planet Vulcan Robotics"'
+  a.push 'git config user.email "info@planetvulcanrobotics.com"'
+  
+  run2 a
+end
+
+task :travis_git_commit do
+  a = Array.new
+  
+  # Git Commit and Push
+  a.push 'git add --all'
+  a.push "git commit -m 'Travis Build: #{ENV["TRAVIS_COMMIT_MSG"]}'"
+  a.push "git push deploy source"
+  a.push "git subtree push --prefix compiled_site/ deploy master"
+  
+  run2 a
+end
+
 desc "Build Jekyll site and copy files."
 task :build do
   puts "Removing previous compiled pages."

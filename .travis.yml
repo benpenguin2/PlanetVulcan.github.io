@@ -3,25 +3,11 @@ rvm:
 - ruby-2.1.7
 cache: bundler
 before_install:
-- openssl aes-256-cbc -K $encrypted_23e7d50fa7c4_key -iv $encrypted_23e7d50fa7c4_iv
-  -in .travis/travis_rsa.enc -out .travis/travis_rsa -d
+- rake travis_getkey
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
 - export TRAVIS_COMMIT_SHA1="$(git log --pretty=format:'%h' -n 1)"
-- git checkout source
-- git reset --hard "$TRAVIS_COMMIT_SHA1"
+- rake travis_git_env
 script:
 - bundle exec rake build
-- ls
 after_success:
-- ls
-- git status
-- eval "$(ssh-agent -s)"
-- chmod 600 .travis/travis_rsa
-- ssh-add .travis/travis_rsa
-- git remote add deploy git@github.com:PlanetVulcan/PlanetVulcan.github.io.git
-- git config user.name "Travis CI - Planet Vulcan Robotics"
-- git config user.email "info@planetvulcanrobotics.com"
-- git add --all
-- "bash -c \"git commit -m 'Travis Build: $TRAVIS_COMMIT_MSG'\""
-- git push deploy source
-- git subtree push --prefix compiled_site/ deploy master
+- rake travis_git_commit
