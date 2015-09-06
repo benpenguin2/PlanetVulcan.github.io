@@ -57,13 +57,9 @@ task :travis_git_commit do
   run ['git', 'commit', '-m', "Travis Build: #{ENV["TRAVIS_COMMIT_MSG"]}"]
   
   # Git Push
-  a = Array.new
   #a.push "git push deploy source"
   #a.push "git subtree push --prefix compiled_site/ deploy master"
   Rake::Task["forcepush"].execute
-  
-  
-  run2 a
 end
 
 desc "Build Jekyll site and copy files."
@@ -106,5 +102,5 @@ end
 desc "Force push compiled_site subtree to master."
 task :forcepush do
   command = "git push origin `git subtree split --prefix compiled_site/ master`:master --force"
-  run ['bash', '-c', command] 
+  run "bash -c '#{command}'" 
 end
