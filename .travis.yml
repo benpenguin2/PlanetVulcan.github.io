@@ -1,7 +1,6 @@
 language: ruby
 rvm:
 - ruby-2.1.7
-cache: bundler
 before_install:
 - bundle exec rake travis_key
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
