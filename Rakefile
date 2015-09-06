@@ -5,6 +5,7 @@ GH_PAGES_DIR = "compiled_site"
 
 
 def run(command)
+  puts "$ #{command}"
   IO.popen(command) do |io|
     while (line = io.gets) do
       puts line
