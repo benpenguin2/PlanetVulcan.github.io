@@ -16,7 +16,7 @@ end
 def run2(commands)
   commands.each do |c|
     puts "$ #{c}"
-    IO.popen('/bin/sh', '-c', c) do |io|
+    IO.popen(['/bin/sh', '-c', c]) do |io|
       while (line = io.gets) do
         puts line
       end
