@@ -52,11 +52,12 @@ end
 
 desc "Travis Git Commit"
 task :travis_git_commit do
-  a = Array.new
+  # Git Commit
+  run 'git add --all'
+  run ['git', 'commit', '-m', "Travis Build: #{ENV["TRAVIS_COMMIT_MSG"]}"]
   
-  # Git Commit and Push
-  a.push 'git add --all'
-  a.push "git commit -m 'Travis Build: #{ENV["TRAVIS_COMMIT_MSG"]}'"
+  # Git Push
+  a = Array.new
   a.push "git push deploy source"
   a.push "git subtree push --prefix compiled_site/ deploy master"
   
