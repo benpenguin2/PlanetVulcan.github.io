@@ -1,13 +1,13 @@
 language: ruby
 rvm:
-- ruby-2.1.7
+- ruby-1.9.3
 cache: bundler
 before_install:
-- rake travis_key
+- bundle exec rake travis_key
 - export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
 - export TRAVIS_COMMIT_SHA1="$(git log --pretty=format:'%h' -n 1)"
-- rake travis_git_env
+- bundle exec rake travis_git_env
 script:
 - bundle exec rake build
 after_success:
-- rake travis_git_commit
+- bundle exec rake travis_git_commit
