@@ -66,6 +66,12 @@ In addition to robotics, Claire enjoys playing violin, singing, and mixing cover
 ###Charles Rosoff
 Charles Rosoff, one of the founding lead coaches and mentors, returns to _USFIRST FTC_ for his third season. While his career is running his Fine Art & Antique appraisal firm in NYC, Mr. Rosoff studied computer science and spent time building computers and repairing cars in high school and college.  At times he feels he is having as much fun as the students, and is most certainly learning from them, lamenting that they are far smarter than he is.
 
-###Michael Seo - TODO
+###Michael Seo
+Michael Seo, Team 9928’s mentor and engineering expert, looks forward to working with the new wave of engineers and scientists in his first year with a robotics team and hopes to provide insight into teamwork, engineering, and planning.
 
+Currently, he looks forward to programming microcontroller Arduino hardware for his home automation project.
+
+Holding both a Ph.D. and Master’s in Electrical Engineering from the University of Texas, as well as his three Bachelor’s degrees that he received from Southern Methodist University, in Electrical Engineering, Computer Science,and Mathematics, Dr. Michael Seo currently holds the position of the Chief Technology Officer at Fermat Capital Management, LLC, benefitting the firm with his background in software development, signal processing, image recognition, and classification algorithms.
+
+Before he joined Fermat in January 2005, he gained over 20 years experience in designing software that controls embedded hardware systems. After graduating Southern Methodist University, Michael was in charge of hardware and software of the F16 fighter jet displays. He programmed computers from the mid-70s such as the TRS 80, Apple2, Commodore 64 NextStep to present high performance computing. Afterwards, Michael was part of the pattern recognition team whose algorithms were core to the first FDA-approved, fully-automated pap smear cancer screening device (NeoPath/TriPath, Redmond, Washington), which consisted of motors, cameras and custom image processing hardware. Later, he developed H.262 image processing compressing algorithms for Equator Technologies’ proprietary image processing CPU and was the director of software and algorithm development for the cellular analysis device company Amnis Corporation, in Seattle, WA, which consists of motors, lasers, PMTs, and TDI cameras. He hopes that he can use this background to assist Team 9928.
 
