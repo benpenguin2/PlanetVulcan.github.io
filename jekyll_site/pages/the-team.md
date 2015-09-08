@@ -30,7 +30,7 @@ Simon Berger is a founding member of team 9928. He is a junior at Staples High S
 Simon does other things outside of robotics. He is a member of the Stand Up to Cancer Club and the Filmmaking Club at Staples High School. He enjoys programming in his free time. He looks forward to AP Calculus BC and AP Statistics BC this upcoming year.
 
 ###Zach Kornbluth
-<!--![Zach Kornbluth]({{ "/img/profile/Kornbluth-Zach.jpg" }}){: .pic-profile }-->
+![Zach Kornbluth]({{ "/img/profile/Kornbluth-Zach.jpg" }}){: .pic-profile }
 
 Zach Kornbluth is a founding member of team 9928. He is a junior at Staples High School and this is his second year involved with a USFirst program. He is one of the programmers on the team, and also works on the Engineering Notebook. He has taken two programming courses at Staples and five college courses through Coursera.org from Rice, Michigan, and Stanford Universities.
 
