@@ -60,6 +60,8 @@ In addition to robotics, Claire enjoys playing violin, singing, and mixing cover
 
 ##Mentors
 
+###Lisa Alter - TODO
+
 ###Mark Kornbluth - TODO
 
 
